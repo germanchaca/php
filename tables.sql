@@ -41,3 +41,13 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` VALUES ('1', 'victor@victor.com', 'password', 'victor', 'robles');
 INSERT INTO `usuarios` VALUES ('2', 'juan@juan.com', 'password', 'juan', 'lopez');
 INSERT INTO `usuarios` VALUES ('4', 'dadfa', '60f796a446e6577892b3cb1886d2a29e4c41226e', 'Antonio', 'Jose');
+
+-- ----------------------------
+-- Table of sessions
+-- ----------------------------
+CREATE TABLE sessions (
+    id varchar(32) NOT NULL,
+    access int(10) unsigned,
+    data text,
+    PRIMARY KEY (id)
+);

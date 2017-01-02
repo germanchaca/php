@@ -1,4 +1,5 @@
 <?php
+
 class UsuariosController extends ControladorBase{
     public $conectar;
 	public $db;
@@ -35,9 +36,9 @@ class UsuariosController extends ControladorBase{
 		}
 		// Increase counter
 		$_SESSION['counter']++;
-		echo "session number: " . $_SESSION['counter'];
-	
-    }
+		echo "session number: " . $_SESSION['counter'] . "\n";
+		
+	}
     
     public function crear(){
         if(isset($_POST["nombre"])){

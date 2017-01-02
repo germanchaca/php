@@ -12,7 +12,9 @@ class ControladorBase{
         foreach(glob("model/*.php") as $file){
             require_once $file;
         }
-    }
+		
+		 
+	}
     
     //Plugins y funcionalidades
     
@@ -31,7 +33,7 @@ class ControladorBase{
         header("Location:index.php?controller=".$controlador."&action=".$accion);
     }
     
-    //Métodos para los controladores
+   
 
 }
 ?>
