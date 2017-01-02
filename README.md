@@ -3,11 +3,12 @@
 A simplistic example of combining a few popular packages into your own micro-framework.
 
 #### Pre-requisites
-[Composer](https://getcomposer.org/):  is a dependency manager for PHP.
+1. [Composer](https://getcomposer.org/):  is a dependency manager for PHP.
 Just because you are not using a framework does not mean you will have to reinvent the wheel every time you want to do something. With Composer, you can install third-party libraries for your application.
 
 Note: The composer.json file is the Composer configuration file that will be used to configure your project and its dependencies.
 
+2. Run tables.sql wich includes sql scripts to create all the tables you need in your server side  database
 #### What's included?
 
  MVC directory structure and classes for:
