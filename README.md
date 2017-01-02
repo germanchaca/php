@@ -1,5 +1,5 @@
 
-# Light MVC framework for PHP applications 
+# Light MVC framework for PHP POO applications 
 A simplistic example of combining a few popular packages into your own micro-framework.
 
 #### Pre-requisites
@@ -31,4 +31,13 @@ I spent some time picking out packages, preferring those used by existing large 
   
 The index.php is the starting point, so it has to be inside the web server directory. This means that the web server has access to all subdirectories.
 
-To handle the Sessions control I followed this tutorial: http://culttt.com/2013/02/04/how-to-save-php-sessions-to-a-database/
+To handle the Sessions control I followed this tutorial: http://culttt.com/2013/02/04/how-to-save-php-sessions-to-a-database/ and I made same changes to the code.
+
+#### Directory structure
+
+1. ```config```: Database and global configuration files
+2. ```controller```: The controllers handle the data received from the views, and they update the model. 
+3. ```core```: The framework core, this is where we put the base controller and model classes.
+4. ```model```: We will have one object for each sql table.
+5. ```view```: The different views of the proyect where we present the data to the user.
+
